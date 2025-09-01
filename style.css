@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #ece5e5e7;
+    /* background-color: rgb(62, 62, 172); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    box-shadow: 1px 1px 5px 2px whitesmoke;
+    /* background: rgb(30, 111, 143); */
+    background: linear-gradient(rgb(19, 91, 185),rgb(67, 221, 226));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.form-box::before{
+    content: '';
+    position: absolute;
+    height: 150%;
+    width: 50%;
+    background: linear-gradient(rgb(211, 13, 211), rgb(68, 32, 150));
+    animation: rotate 4s ease-in 0s infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.form-box::after{
+    content: '';
+    position: absolute;
+    /* background-color: rgb(30, 111, 143); */
+    background: linear-gradient(rgb(19, 91, 185),rgb(67, 221, 226));
+    inset: 5px;
+    border-radius: 10px;
+}
+
+form{
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.input{
+    margin-top: 20px;
+    height: 30px;
+    font-size: 20px;
+    font-size: 1.3rem;
+}
+
+#email{
+    height: 80%;
+    margin-left: 35px;
+}
+
+#pass{
+    height: 80%;
+    margin-left: 5px;
+}
+
+.checkbox{
+    margin-top: 30px;
+}
+
+p{
+    display: inline;
+}
+
+p a{
+    text-decoration: none;
+}
+
+.button{
+    margin: 25px;
+}
+
+button{
+    margin: 10px;
+    height: 25px;
+    background: linear-gradient(rgb(157, 12, 194),rgb(36, 167, 219));
+    color: white;
+    width: 90px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
